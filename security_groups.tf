@@ -88,8 +88,8 @@ resource "aws_security_group" "app_sg" {
   ingress {
     description = "App access from web tier"
 
-    from_port = 4000
-    to_port   = 4000
+    from_port = 4001
+    to_port   = 4004
     protocol  = "tcp"
 
     security_groups = [
