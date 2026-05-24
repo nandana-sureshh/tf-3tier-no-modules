@@ -134,10 +134,10 @@ resource "aws_security_group" "db_sg" {
   vpc_id = aws_vpc.main.id
 
   ingress {
-    description = "MySQL from app tier"
+    description = "Mongodb from app tier"
 
-    from_port = 3306
-    to_port   = 3306
+    from_port = 27017
+    to_port   = 27017
     protocol  = "tcp"
 
     security_groups = [
